@@ -1,0 +1,33 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-icon/iron-icon.html">
+<link rel="import" href="app-page-content-right-styles.html">
+
+<!--
+`app-page-content-right`
+This component shows a box with information inside
+
+@demo demo/index.html
+-->
+
+<dom-module id="app-page-content-right">
+  <style include="app-page-content-right-styles app-page-content-right-shared-styles"></style>
+  <template>
+    <div class="box">
+
+      <template is="dom-if" if="[[componentName]]">
+
+      </template>
+
+      <div class="box__bower">
+        <div class="box__bower__header">
+          <img src="./assets/bower-logo.png" alt="[[bowerUrl]]">
+          <span>Bower</span>
+        </div>
+        <div class="box__bower__body">
+          <span>bower install --save [[bowerUrl]]</span>
+        </div>
+      </div>
+    </div>
+  </template>
+  <script src="app-page-content-right.js"></script>
+</dom-module>

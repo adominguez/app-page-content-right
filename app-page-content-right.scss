@@ -1,0 +1,27 @@
+:host([hidden]) {
+  display: none;
+}
+
+:host {
+  display: block;
+  box-sizing: border-box;
+  color: var(--app-page-content-right-color, #666);
+  border: 1px solid #d7dfe3;
+  @apply --app-page-content-right;
+}
+
+.box {
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  &__bower {
+    &__header {
+      background: #ffcc2f;
+      color: #fff;
+      padding: 1em;
+      font-size: 18px;
+    }
+    &__body {
+      padding: 1em;
+    }
+  }
+}
