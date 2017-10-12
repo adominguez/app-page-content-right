@@ -5,13 +5,12 @@
   display: block;
   box-sizing: border-box;
   color: var(--app-page-content-right-color, #212121);
-  border: 1px solid #d7dfe3;
   @apply --app-page-content-right; }
 
 .box {
   border: 1px solid #e5e5e5;
   box-sizing: border-box;
-  margin: 1em; }
+  margin: 0.5em; }
   .box__bower__header {
     background: #ffcc2f;
     color: #fff;
@@ -38,6 +37,13 @@
       padding-right: 10px; }
   .box__resources__body {
     padding: 1em; }
+    .box__resources__body__span {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      position: relative;
+      box-sizing: border-box;
+      width: 200px; }
   .box__resources__footer {
     display: -ms-flexbox;
     display: flex;
@@ -62,6 +68,8 @@
       .box__resources__footer__button__svg {
         height: 24px;
         margin-bottom: 0.5em; }
+      .box__resources__footer__button__span {
+        font-size: 12px; }
     .box__resources__footer__button:first-child {
       border-left: none; }
     .box__resources__footer__button:hover {
