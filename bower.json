@@ -7,7 +7,8 @@
   "ignore": [],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.8.0",
-    "iron-icon": "iron-icon#^1.0.0"
+    "paper-icon-button": "paper-icon-button#^1.1.6",
+    "vaadin-icons": "vaadin/vaadin-icons#^4.1.2"
   },
   "devDependencies": {
     "adom-demo-helper-properties": "https://github.com/adominguez/adom-demo-helper-properties.git",
