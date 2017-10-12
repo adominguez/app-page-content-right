@@ -38,7 +38,7 @@
       this.dispatchEvent(new CustomEvent('change-view', {
         bubbles: true,
         composed: true,
-        detail: this.view
+        detail: {type: this.view, component: this.componentName}
       }))
     },
     goGithub: function() {
